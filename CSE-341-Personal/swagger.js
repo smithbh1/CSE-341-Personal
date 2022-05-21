@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'Journal API to perform CRUD operations in Mongodb database'
   },
-  host: 'still-ridge-25390.herokuapp.com/',
+  host: 'still-ridge-25390.herokuapp.com',
   basePath: "/",
   schemes: ['https'],
 };

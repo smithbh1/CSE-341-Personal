@@ -11,7 +11,7 @@ const createJournal = async (req, res) => {
       goalsComplete : req.body.goalsComplete,
       goalsToDo: req.body.goalsToDo
     };
-    const response = await mongodb.getCollection('journals').insertOne(journal);
+    const response = await mongodb.getCollection('journal').insertOne(journal);
     if (response.acknowledged) {
       res.status(201).json(response);
     } else {
