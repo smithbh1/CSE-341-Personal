@@ -5,7 +5,7 @@
     "description": "Journal API to perform CRUD operations in Mongodb database",
     "version": "1.0.0"
   },
-  "host": "still-ridge-25390.herokuapp.com",
+  "host": "still-ridge-25390.herokuapp.com/",
   "basePath": "/",
   "schemes": [
     "https"
@@ -152,18 +152,15 @@
         }
       }
     },
-    "/auth/google": {
+    "/journal-count/": {
       "get": {
         "description": "",
         "parameters": [],
-        "responses": {}
-      }
-    },
-    "/auth/google/callback": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     }
   }

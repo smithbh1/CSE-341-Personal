@@ -6,9 +6,10 @@ const { journalEntryValidation, results } = require('./validation');
 const ObjectId = require('mongodb').ObjectId;
 const cors = require('cors');
 
+
 routes.use(bodyParser.json());
 routes.use(bodyParser.urlencoded({ extended:true }));
-routes.use(cors())
+routes.use(cors());
 
 routes.get('/', (req, res) =>{
 
